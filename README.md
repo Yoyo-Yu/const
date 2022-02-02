@@ -2,12 +2,12 @@
 a experiment for const in C++, and there is some sommary
 
 ### const pointer
-there are 3 kind of const variable
+there are 3 kind of const pointer type
 
 - const ptr
   - Declaration
     - int *const ptr1 = &value; 
-    - must give initialization
+    - must initialize
   - After initialiezed, it cannot point to another value
   - But can asign new value by `*ptr1 = 11;`
 - const int
@@ -21,3 +21,13 @@ there are 3 kind of const variable
   - Declaration
     - const int *const ptr4 = &value1;
   - Get all restriction of const ptr and const int
+
+### const reference
+Unlike const pointer, there is only 1 type
+- const int
+  - Declaration
+    - const int &ref2 = value1;
+    - int const &ref3 = value1;
+    - must initialize
+  - Cannot reference to another variable
+  - Cannot asign new value
