@@ -13,11 +13,13 @@ int main()
     const int *const ptr4 = &value1;
     const int *ptr5;
     //int *const ptr6; //error: uninitialized const 'ptr6'
+	//const int *const ptr7; //error: uninitialized const 'ptr7'
     
     //int &const ref1 = value1; //error: ‘const’ qualifiers cannot be applied to 'int&'
     const int &ref2 = value1;
     int const &ref3 = value1;
     //const int &const ref4 = value1; //error: ‘const’ qualifiers cannot be applied to 'int&'
+	//const int &ref5; //error: 'ref5' declared as reference but not initialized
     
     value1 = 0;
     
